@@ -37,8 +37,8 @@ export const Revenue = () => {
 
     return (
         <>
-            <div className="bg-[#FDD02826] h-[200px] w-full flex items-center">
-                <div className="bg-[#FDD028] w-full p-6 h-[144px] flex justify-between items-center flex-wrap">
+            <div className="bg-[#FDD02826] w-full flex items-center py-10">
+                <div className="bg-[#FDD028] w-full flex-col md:flex-row p-6 flex justify-between gap-6 items-center flex-wrap">
                     {revenueList.map((revenue, index) => (
                         <div className="flex gap-2 items-center" key={index}>
                             <div className="w-[80px] h-[80px] rounded-[200px] bg-[#04359C0D] flex justify-center items-center">

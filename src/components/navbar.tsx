@@ -111,36 +111,36 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                             className={`flex items-center space-x-8 font-montserrat font-bold ${theme === "dark" ? "text-white" : `text-[#656565]`
                                 }`}>
                             <Link
-                                href="#home"
-                                className={`transition-all font-bold duration-100 hover:scale-95 hover:border-b text-sm ${pathname === "/about-us" &&
+                                href=""
+                                className={`transition-all font-bold duration-100 hover:scale-95 hover:border-b text-sm ${pathname === "" &&
                                     `border-b ${theme === "dark" ? "" : "text-blue-600"}`
                                     }`}>
                                 HOME
                             </Link>
                             <Link
-                                href="#about"
-                                className={`transition-all font-bold duration-100 hover:scale-95 hover:border-b text-sm ${pathname === "/contact-us" &&
+                                href=""
+                                className={`transition-all font-bold duration-100 hover:scale-95 hover:border-b text-sm ${pathname === "" &&
                                     `border-b ${theme === "dark" ? "" : "text-blue-600"}`
                                     }`}>
                                 ABOUT US
                             </Link>
                             <Link
                                 href="#services"
-                                className={`transition-all font-bold duration-100 hover:scale-95 hover:border-b text-sm ${pathname.startsWith("/our-blog") &&
+                                className={`transition-all font-bold duration-100 hover:scale-95 hover:border-b text-sm ${pathname.startsWith("") &&
                                     `border-b ${theme === "dark" ? "" : "text-blue-600"}`
                                     }`}>
                                 SERVICES
                             </Link>
                             <Link
                                 href="#media"
-                                className={`transition-all font-bold duration-100 hover:scale-95 hover:border-b text-sm ${pathname.startsWith("/our-blog") &&
+                                className={`transition-all font-bold duration-100 hover:scale-95 hover:border-b text-sm ${pathname.startsWith("") &&
                                     `border-b ${theme === "dark" ? "" : "text-blue-600"}`
                                     }`}>
                                 MEDIA
                             </Link>
                             <Link
                                 href="#projects"
-                                className={`transition-all font-bold duration-100 hover:scale-95 hover:border-b text-sm ${pathname.startsWith("/our-blog") &&
+                                className={`transition-all font-bold duration-100 hover:scale-95 hover:border-b text-sm ${pathname.startsWith("") &&
                                     `border-b ${theme === "dark" ? "" : "text-blue-600"}`
                                     }`}>
                                 PROJECTS
@@ -171,7 +171,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                     <div className="w-full">
                         <div className="w-full flex justify-between gap-10 mt-4">
                             <Link
-                                href="#home"
+                                href=""
                                 className="transition-all duration-300 hover:scale-105 cursor-pointer ">
                                 <Image
                                     src="/assets/images/svg/logo.svg"
@@ -208,7 +208,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                     </div>
                     <div className="mt-5">
                         <Link
-                            href="/auth/sign-up"
+                            href=""
                             className="bg-[#04359C] justify-center items-center gap-2 py-4 px-6 flex rounded-[64px] text-base font-bold font-montserrat text-white ">
                             Contant US <ArrowRight size={20} />
                         </Link>
