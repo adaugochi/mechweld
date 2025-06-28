@@ -7,12 +7,14 @@ import EngineerMan from "../../../public/assets/images/png/home-about-img.png"
 export const AboutUs = () => {
     return (
         <>
-        <div className="bg-transparent my-20 w-[90%] mx-auto relative ">
-            <Image src={Stroke} alt="stroke" className="w-[622px] absolute top-[-80px] right-0 h-[100%]"/>
-            <div className="bg-[#04359C0D] w-full rounded-[40px] flex flex-col md:flex-row justify-between items-center py-[80px] px-[40px]">
+        <div className="bg-transparent md:my-20 my-10 w-[90%] mx-auto relative ">
+            <Image src={Stroke} alt="stroke" className="w-[622px] absolute top-[-80px] right-0 hidden md:block"/>
+            <div className="bg-[#04359C0D] w-full rounded-[20px] md:rounded-[40px] flex flex-col md:flex-row justify-between items-center md:py-[80px] py-[40px] md:px-[40px] px-6">
                 <div className="md:w-[45%] w-full">
-                    <h1 className="text-[#04359C] font-semibold text-2xl font-raleway">ABOUT US</h1>
-                    <p className="text-[#04359C] text-[18px] font-montserrat pb-6">Learn about the company.</p>
+                    <div>
+                        <h1 className="text-[#04359C] font-semibold text-2xl font-raleway">ABOUT US</h1>
+                        <p className="text-[#04359C] text-[18px] font-montserrat pb-6">Learn about the company.</p>
+                    </div>
                     <p className="text-[#1A1A1A] font-montserrat mb-6">
                        We are an Engineering contracting company based in Nigeria that have created  value from being actively involved in Engineering Contracts with high  performance production technology, project management and consultancy. 
                     </p>
@@ -27,7 +29,7 @@ export const AboutUs = () => {
                         <ArrowRight />
                     </Button>
                 </div>
-                <div className="z-0 md:w-[50%] w-full">
+                <div className="z-0 md:w-[50%] w-full mt-6">
                     <Image src={EngineerMan} alt="EngineerMan" className="w-full"/>
                 </div>
             </div>

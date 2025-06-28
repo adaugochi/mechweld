@@ -25,14 +25,14 @@ export const Values = () => {
                 className="absolute top-0 z-0"
             />
 
-            <div className="bg-[#04359C] w-[90%] rounded-[40px] py-[80px] px-[40px] mx-auto relative z-10">
+            <div className="bg-[#04359C] w-[90%] md:rounded-[40px] rounded-[20px] py-[80px] md:px-[40px] px-6 mx-auto relative z-1">
                 <h1 className="text-white uppercase font-semibold font-raleway text-2xl">
                     Core Values
                 </h1>
                 <p className="text-white mt-4 font-montserrat">
                     Our core values are the basis for establishing a common culture for the company
                 </p>
-                <div className="flex justify-between items-center flex-wrap mt-30 gap-y-10">
+                <div className="flex md:justify-between items-center flex-wrap mt-30 gap-10 justify-center md:flex-row flex-col">
                     {values.map((value, index) => (
                         <div key={index}>
                             <div className="w-[116px] h-[116px] bg-white rounded-[120px] flex justify-center items-center">

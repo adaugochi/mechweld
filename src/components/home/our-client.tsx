@@ -17,10 +17,10 @@ export const OurClient = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.to(".logo-track", {
-        xPercent: -100,
+        xPercent: -50,
         repeat: -1,
         ease: "linear",
-        duration: 1,
+        duration: 20,
       });
     }, scrollRef);
 
@@ -38,9 +38,13 @@ export const OurClient = () => {
           {[...clientLogos, ...clientLogos].map((logo, index) => (
             <div
               key={index}
-              className="bg-[#F5F5F5] w-[310px] h-[168px] mx-4 rounded-[28px] flex items-center justify-center"
+              className="bg-[#F5F5F5] min-w-[200px] md:min-w-[250px] lg:min-w-[280px] h-[168px] mx-4 rounded-[28px] flex items-center justify-center"
             >
-              <Image src={logo} alt={`Client logo ${index}`} className="h-auto" />
+              <Image
+                src={logo}
+                alt={`Client logo ${index}`}
+                className="h-auto max-h-[100px] w-auto"
+              />
             </div>
           ))}
         </div>
