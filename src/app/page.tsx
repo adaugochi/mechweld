@@ -5,6 +5,8 @@ import { OurClient } from "@/components/home/our-client";
 import { Services } from "@/components/home/services";
 import { Projects } from "@/components/home/project";
 import { Testimonials } from "@/components/home/testimonials";
+import { Partnership } from "@/components/home/partnership";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
      <Services />
      <Projects />
      <Testimonials />
+     <Partnership />
+     <Footer/>
     </div>
   );
 }

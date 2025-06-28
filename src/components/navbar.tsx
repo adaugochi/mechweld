@@ -92,9 +92,9 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
         <div
             className={`border-b border-[#bdbbbb] fixed w-full top-0 z-100 ${theme === "dark"
                 ? scrolled
-                    ? "backdrop-blur-xl bg-[#04359C]/5"
+                    ? "bg-[#1A1A1A]"
                     : ""
-                : "backdrop-blur-xl bg-[#04359C]/5"
+                : "bg-[#1A1A1A]"
                 }`}
         >
             <nav className="w-[90%] mx-auto bg-transparent py-5 flex justify-between items-center lg:gap-40 relative">
@@ -133,10 +133,10 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                     {/* Desktop Contact Button */}
                     <div className="hidden md:block">
                         <Link
-                            href="/auth/sign-up"
+                            href="/contact"
                             className="bg-[#04359C] justify-center items-center gap-2 py-4 px-6 flex rounded-[64px] text-sm font-bold font-montserrat text-white"
                         >
-                            Contact US <ArrowRight size={20} />
+                            Contact Us <ArrowRight size={20} />
                         </Link>
                     </div>
                 </div>
@@ -153,7 +153,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                 {/* Mobile Menu Overlay */}
                 <div
                     ref={menuRef}
-                    className="fixed top-0 left-0 w-full h-full bg-[#04359C]/5 backdrop-blur-xl flex flex-col items-start p-6 transform -translate-x-full -translate-y-full opacity-0 z-50"
+                    className="fixed top-0 left-0 w-full h-full bg-[#1A1A1A] flex flex-col items-start p-6 transform -translate-x-full -translate-y-full opacity-0 z-50"
                 >
                     <div className="w-full">
                         <div className="w-full flex justify-between gap-10 mt-4">
@@ -196,10 +196,10 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                     {/* Mobile Contact Button */}
                     <div className="mt-5">
                         <Link
-                            href="/auth/sign-up"
+                            href="/contact"
                             className="bg-[#04359C] justify-center items-center gap-2 py-4 px-6 flex rounded-[64px] text-base font-bold font-montserrat text-white"
                         >
-                            Contact US <ArrowRight size={20} />
+                            Contact Us <ArrowRight size={20} />
                         </Link>
                     </div>
                 </div>
