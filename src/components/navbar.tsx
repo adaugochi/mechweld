@@ -147,7 +147,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                     className={`md:hidden cursor-pointer ${theme === "dark" ? "text-white" : "text-white"} hover:scale-105`}
                     onClick={handleMobileButton}
                 >
-                    <MenuIcon/>
+                    <MenuIcon size={24}/>
                 </button>
 
                 {/* Mobile Menu Overlay */}

@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Raleway, Montserrat } from "next/font/google";
+import WhatsApp from "@/components/whatsapp";
 import "./globals.css";
 
-// Load Google Fonts
 const raleWay = Raleway({
   variable: "--font-rale-way",
   subsets: ["latin"],
@@ -75,14 +75,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${raleWay.variable} ${montserrat.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased min-h-screen">
+        {children}
+        <WhatsApp />
+      </body>
     </html>
   );
 }

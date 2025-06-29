@@ -22,7 +22,7 @@ export const Partnership = () => {
                                 </p>
                                 <div className="mt-5 flex justify-center">
                                     <Link
-                                        href="/auth/sign-up"
+                                        href="/contact"
                                         className="bg-[#04359C] w-[200px] justify-center items-center gap-2 py-4 px-6 flex rounded-[64px] text-base font-bold font-montserrat text-white"
                                     >
                                         Contact Us <ArrowRight size={20} />

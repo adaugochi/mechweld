@@ -5,7 +5,7 @@ import { OurClient } from "@/components/home/our-client";
 import { Services } from "@/components/home/services";
 import { Projects } from "@/components/home/project";
 import { Testimonials } from "@/components/home/testimonials";
-import { Partnership } from "@/components/home/partnership";
+import { Partnership } from "@/components/partnership";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
