@@ -143,11 +143,10 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
 
                 {/* Mobile Menu Button */}
                 <button
-                    ref={buttonRef}
-                    className={`md:hidden cursor-pointer ${theme === "dark" ? "text-white" : "text-white"} hover:scale-105 transition-all duration-300`}
+                    
+                    className={`md:hidden cursor-pointer ${theme === "dark" ? "text-white" : "text-white"} hover:scale-105`}
                     onClick={handleMobileButton}
                 >
-                    open
                     <MenuIcon/>
                 </button>
 
