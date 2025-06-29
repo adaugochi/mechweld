@@ -147,6 +147,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                     className={`md:hidden cursor-pointer ${theme === "dark" ? "text-white" : "text-white"} hover:scale-105 transition-all duration-300`}
                     onClick={handleMobileButton}
                 >
+                    open
                     <MenuIcon/>
                 </button>
 
