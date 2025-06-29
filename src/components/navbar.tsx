@@ -121,7 +121,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                                 <Link
                                     key={name}
                                     href={href}
-                                    className={`transition-all text-sm font-bold duration-100 hover:scale-95 ${pathname === href ? "text-blue-600" : ""
+                                    className={`transition-all text-sm font-bold duration-100 hover:scale-95 ${pathname === href ? "text-[#04359C]" : ""
                                         }`}
                                 >
                                     {name}
@@ -181,7 +181,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                                     key={name}
                                     href={href}
                                     onClick={() => setIsOpen(false)}
-                                    className={`pb-2 ${pathname === href ? "text-blue-600" : ""
+                                    className={`pb-2 ${pathname === href ? "text-[#04359C]" : ""
                                         }`}
                                     ref={(el: HTMLAnchorElement | null) => {
                                         if (el) menuItemsRef.current[index] = el;
