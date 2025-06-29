@@ -15,6 +15,11 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "Mech-Weld | Engineering Services",
   description: "Revolutionizing the Engineering Services Industry with world-class welding, fabrication, and automation solutions.",

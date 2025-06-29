@@ -90,7 +90,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
 
     return (
         <div
-            className={`border-b border-[#bdbbbb] fixed w-full top-0 z-100 ${theme === "dark"
+            className={`border-b border-[#bdbbbb] fixed w-full top-0 z-[100] ${theme === "dark"
                 ? scrolled
                     ? "bg-[#1A1A1A]"
                     : ""
