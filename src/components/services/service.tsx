@@ -4,7 +4,7 @@ import DotListLeave from "../../../public/assets/images/svg/dot-list-leave.svg";
 import { serviceData } from "../constants/serviceData";
 
 const ServiceListItem = ({ text }: { text: string }) => (
-    <div className="flex items-start gap-2 mb-4">
+    <div className="flex items-start gap-2 mb-6">
         <Image src={DotList} alt="dot" />
         <p className="text-[#1A1A1A] font-montserrat">{text}</p>
     </div>
@@ -64,8 +64,8 @@ const ServiceCard = ({
 
 export const Service = () => {
     return (
-        <div className="w-[90%] mx-auto my-20">
-            <h1 className="text-[#04359C] text-2xl font-semibold font-raleway">
+        <div className="w-[90%] lg:w-[80%] mx-auto my-20">
+            <h1 className="text-[#04359C] text-3xl font-semibold font-raleway">
                 Services We Offer
             </h1>
 

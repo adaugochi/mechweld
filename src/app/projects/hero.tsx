@@ -11,15 +11,12 @@ export const Hero = () => {
 
                 <div className="relative z-10 h-[100vh] flex flex-col">
                     <Navbar />
-                    <div className="flex flex-1 items-center">
-                        <div className="w-[90%] mx-auto">
-                            <div className="md:max-w-[50%] ">
-                                <h1 className="text-white md:text-[56px] text-3xl font-bold font-raleway md:leading-18">
-                                   Our Projects
+                    <div className="flex flex-1 items-end">
+                        <div className="w-[90%] lg:w-[80%] mx-auto">
+                            <div className="md:max-w-[80%] mb-40">
+                                <h1 className="text-white md:text-[68px] lg:text-[88px] text-[40px] text-3xl font-bold font-raleway md:leading-18">
+                                    Our Projects
                                 </h1>
-                                <p className="text-white md:mt-2 mt-6 font-raleway">
-                                    Mech-Weld Engineering is set to revolutionize and democratize access to top notch engineering services across Nigeria and Africa at large.
-                                </p>
                             </div>
                         </div>
                     </div>

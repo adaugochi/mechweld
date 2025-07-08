@@ -9,10 +9,10 @@ export const AboutUs = () => {
         <>
             <div className="bg-transparent md:my-20 my-10 w-[90%] mx-auto relative ">
                 <Image src={Stroke} alt="stroke" className="w-[622px] absolute top-[-80px] right-0 hidden md:block" />
-                <div className="bg-[#04359C0D] w-full rounded-[20px] md:rounded-[40px] flex flex-col md:flex-row justify-between items-start md:py-[80px] py-[40px] md:px-[40px] px-6">
+                <div className="bg-[#04359C0D] w-full rounded-[20px] md:rounded-[40px] flex flex-col md:flex-row justify-between items-center md:py-[80px] py-[40px] md:px-[40px] px-6">
                     <div className="md:w-[45%] w-full">
-                        <div className="mb-4 md:mb-0">
-                            <p className="text-[#04359C] text-[18px] font-montserrat">About Mech Weld</p>
+                        <div className="mb-4">
+                            <p className="text-[#04359C] text-[18px] font-montserrat">About Mech-Weld</p>
                             <h1 className="text-[#04359C] font-semibold text-2xl font-raleway">Home of Modern Technology</h1>
                         </div>
                         <p className="text-[#1A1A1A] font-montserrat mb-6">

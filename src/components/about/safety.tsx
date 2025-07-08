@@ -6,7 +6,7 @@ export const Safety = () => {
         <>
             <div className="bg-[#F5F5F5] w-full md:py-20 py-10">
                 <div className="bg-white w-[90%] mx-auto rounded-[16px] md:rounded-[40px] px-6 py-8 md:py-[80px] md:px-[40px]">
-                    <div className="flex justify-between items-start gap-6 flex-col-reverse md:flex-row">
+                    <div className="flex justify-between items-center gap-6 flex-col-reverse md:flex-row">
                         <Image src={SafetyImage} alt="safety" className="w-full" />
                         <div>
                             <p className="text-[#04359C] font-montserrat">Big on safety</p>

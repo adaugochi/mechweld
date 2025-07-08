@@ -21,12 +21,12 @@ export const OurHistory = () => {
     return (
         <>
             <div className="bg-[#1A1A1A] md:py-20 py-10">
-                <div className=" w-[90%] mx-auto">
-                    <h1 className="text-center text-[#FDD028] font-semibold text-2xl font-raleway">Our History</h1>
+                <div className="w-[90%] lg:w-[80%] mx-auto">
+                    <h1 className="text-center text-[#FDD028] font-semibold text-3xl font-raleway">Our History</h1>
                     <div className="mt-20 flex flex-col gap-8">
                         {historyRecord.map((record, index) => (
                             <div className="flex justify-between flex-col md:flex-row" key={index}>
-                                <h1 className={`font-bold text-4xl font-raleway mb-2 md:mb-0 ${record.textColor}`}>{record.year}</h1>
+                                <h1 className={`font-bold text-5xl font-raleway mb-2 md:mb-0 ${record.textColor}`}>{record.year}</h1>
                                 <div className="md:max-w-[50%]">
                                     <p className={`font-montserrat ${record.textColor}`}>{record.text}</p>
                                 </div>

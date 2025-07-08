@@ -10,8 +10,8 @@ function AboutUsPage () {
         <>
             <Hero />
             <AboutUs />
-            <OurHistory />
             <Safety />
+            <OurHistory />
             <Partnership />
             <Footer />
         </>
