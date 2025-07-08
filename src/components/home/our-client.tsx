@@ -29,8 +29,8 @@ export const OurClient = () => {
 
   return (
     <div className="overflow-hidden py-10" ref={scrollRef}>
-      <h1 className="text-center uppercase text-[#04359C] font-semibold font-raleway text-2xl">
-        Our Client
+      <h1 className="text-center uppercase text-[#04359C] font-semibold font-raleway text-3xl">
+        Our Clients
       </h1>
 
       <div className="w-full mt-10">

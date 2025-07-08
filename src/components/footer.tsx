@@ -79,7 +79,7 @@ export const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="border-[1.5px] border-[#F5F5F5] w-full mt-12"></div>
+                        <div className="border-[1px] border-[#F5F5F5] w-full mt-12"></div>
                         <p className="text-white text-center font-medium font-montserrat mt-10">Built with 💕 by Malzatov Group</p>
                     </div>
                 </div>

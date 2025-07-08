@@ -4,19 +4,19 @@ import { ArrowRight } from "lucide-react"
 export const Projects = () => {
     return (
         <>
-            <div className="w-[90%] mx-auto">
+            <div className="w-[90%] mx-auto md:my-20 my-10">
                 <div className="flex justify-between items-center md:flex-row flex-col">
-                    <div className="nd:max-w-[40%]">
-                        <div className="uppercase text-[#04359C] font-raleway font-semibold text-2xl">
+                    <div className="md:max-w-[40%]">
+                        <div className="uppercase text-[#04359C] font-raleway font-semibold text-3xl">
                             Projects
                         </div>
-                        <h2 className="text-[#04359C] text-[18px] font-montserrat">
+                        <h2 className="text-[#04359C] text-[18px] font-montserrat mt-2">
                             Learn more about the work we do and how it is such a great delight to clients and communities.
                         </h2>
                     </div>
                     <Link
                         href=""
-                        className="bg-transparent my-4 md:my-0 border border-[#04359C] justify-center items-center gap-2 py-4 px-6 flex rounded-[64px] text-base font-bold font-montserrat text-[#04359C]"
+                        className="bg-transparent my-4 md:my-0 border border-[#04359C] justify-center items-center gap-2 py-4 px-6 flex rounded-[64px] text-sm font-bold font-montserrat text-[#04359C]"
                     >
                         View All Projects <ArrowRight size={24} />
                     </Link>

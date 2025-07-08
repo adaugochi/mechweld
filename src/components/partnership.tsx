@@ -5,7 +5,7 @@ export const Partnership = () => {
     return (
         <>
             <div
-                className="relative md:h-[80vh] h-[60vh] bg-cover bg-center bg-[#FDD02826]"
+                className="relative md:h-[70vh] h-[60vh] bg-cover bg-center bg-[#FDD02826]"
                 style={{ backgroundImage: `url('/assets/images/png/testimonial-bg.png')` }}
             >
                 <div className="absolute inset-0 bg-opacity-50 z-0" />

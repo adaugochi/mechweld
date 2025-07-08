@@ -128,3 +128,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+.btn-padding {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}

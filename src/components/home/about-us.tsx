@@ -12,8 +12,8 @@ export const AboutUs = () => {
             <div className="bg-[#04359C0D] w-full rounded-[20px] md:rounded-[40px] flex flex-col md:flex-row justify-between items-center md:py-[80px] py-[40px] md:px-[40px] px-6">
                 <div className="md:w-[45%] w-full">
                     <div>
-                        <h1 className="text-[#04359C] font-semibold text-2xl font-raleway">ABOUT US</h1>
-                        <p className="text-[#04359C] text-[18px] font-montserrat pb-6">Learn about the company.</p>
+                        <h1 className="text-[#04359C] font-semibold text-3xl font-raleway">ABOUT US</h1>
+                        <p className="text-[#04359C] text-[18px] font-montserrat pb-6 mt-2">Learn about the company.</p>
                     </div>
                     <p className="text-[#1A1A1A] font-montserrat mb-6">
                        We are an Engineering contracting company based in Nigeria that have created  value from being actively involved in Engineering Contracts with high  performance production technology, project management and consultancy. 
@@ -24,7 +24,7 @@ export const AboutUs = () => {
                     <p className="text-[#1A1A1A] font-montserrat mb-6">
                         Since our inception Mech Weld Ltd has supervised, installed and maintained for  numerous clients in Nigeria.
                     </p>
-                    <Button className="py-4 px-6 border border-[#04359C] text-[#04359C] bg-transparent rounded-[64px] font-bold font-montserrat">
+                    <Button className="py-4 btn-padding border border-[#04359C] text-[#04359C] bg-transparent rounded-[64px] font-bold font-montserrat">
                         Read More
                         <ArrowRight />
                     </Button>

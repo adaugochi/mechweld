@@ -103,10 +103,10 @@ export const Testimonials = () => {
                 <div className="w-[90%] mx-auto py-30">
                     <div className="flex justify-between items-center">
                         <div className="">
-                            <div className="uppercase text-white font-raleway font-semibold mb-2 md:mb-0 text-2xl">
+                            <div className="uppercase text-white font-raleway font-semibold mb-2 md:mb-0 text-3xl">
                                 Testimonials
                             </div>
-                            <h2 className="text-white text-[18px] font-montserrat">
+                            <h2 className="text-white text-[18px] font-montserrat mt-2">
                                 Here are a few kind words clients have to say about working with Mech-Weld
                             </h2>
                         </div>

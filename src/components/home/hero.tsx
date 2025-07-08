@@ -13,13 +13,14 @@ export const Hero = () => {
                 <div className="relative z-10 h-[100vh] flex flex-col">
                     <Navbar />
                     <div className="flex flex-1 items-center">
-                        <div className="w-[90%] mx-auto">
-                            <div className="md:max-w-[50%] ">
-                                <h1 className="text-white md:text-[56px] text-3xl font-bold font-raleway md:leading-18">
+                        <div className="w-[90%] lg:w-[80%] mx-auto">
+                            <div className="md:max-w-[80%] ">
+                                <h1 className="text-white md:text-[68px] lg:text-[88px] text-[40px] text-3xl font-bold font-raleway">
                                     Revolutionizing the Engineering Services Industry
                                 </h1>
-                                <p className="text-white md:mt-2 mt-6 font-raleway">
-                                    Mech-Weld Engineering is set to revolutionize and democratize access to top notch engineering services across Nigeria and Africa at large.
+                                <p className="text-white md:mt-2 mt-6 font-raleway md:text-[1.5rem]">
+                                    Mech-Weld Engineering is set to revolutionize and democratize access to top notch
+                                    engineering services across Nigeria and Africa at large.
                                 </p>
                             </div>
                         </div>

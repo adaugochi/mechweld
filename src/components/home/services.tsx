@@ -73,10 +73,10 @@ export const Services = () => {
             <div className="w-[90%] mx-auto">
                 <div className="flex justify-between items-center">
                     <div className="">
-                        <div className="uppercase text-[#04359C] font-raleway mb-2 md:mb-0 font-semibold text-2xl">
+                        <div className="uppercase text-[#04359C] font-raleway mb-2 md:mb-0 font-semibold text-3xl">
                             Scope of Services
                         </div>
-                        <h2 className="text-[#04359C] text-[18px] font-montserrat">
+                        <h2 className="text-[#04359C] text-[18px] font-montserrat mt-2">
                             We take the best that exists and make it better.
                         </h2>
                     </div>

@@ -26,7 +26,7 @@ export const Values = () => {
             />
 
             <div className="bg-[#04359C] w-[90%] md:rounded-[40px] rounded-[20px] py-[80px] md:px-[40px] px-6 mx-auto relative z-1">
-                <h1 className="text-white uppercase font-semibold font-raleway text-2xl">
+                <h1 className="text-white uppercase font-semibold font-raleway text-3xl">
                     Core Values
                 </h1>
                 <p className="text-white mt-4 font-montserrat">
@@ -40,7 +40,7 @@ export const Values = () => {
                                     <Image src={value.icon} alt={`${value.label} Icon`} />
                                 </div>
                             </div>
-                            <p className="font-montserrat font-semibold text-[20px] text-center text-white">
+                            <p className="font-montserrat font-semibold text-[20px] mt-2 text-center text-white">
                                 {value.label}
                             </p>
                         </div>

@@ -97,7 +97,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                 : "bg-[#1A1A1A]"
                 }`}
         >
-            <nav className="w-[90%] mx-auto bg-transparent py-5 flex justify-between items-center lg:gap-40 relative">
+            <nav className="w-[90%] lg:w-[80%] mx-auto bg-transparent py-5 flex justify-between items-center lg:gap-40 relative">
                 <div className="w-full flex justify-between">
                     <div>
                         <Link href="/">
