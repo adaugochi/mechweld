@@ -17,6 +17,7 @@ const montserrat = Montserrat({
 
 export const viewport: Viewport = {
   width: "device-width",
+  themeColor: "#000000",
   initialScale: 1,
 };
 
@@ -38,7 +39,6 @@ export const metadata: Metadata = {
     icon: "/logo1.png",
     shortcut: "/logo1.png",
   },
-  themeColor: "#000000",
   openGraph: {
     title: "Mech-Weld | Engineering Excellence",
     description:
