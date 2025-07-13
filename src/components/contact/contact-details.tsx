@@ -31,7 +31,7 @@ export const ContactDetails = () => {
 
     return (
         <>
-            <div className="bg-[#F5F5F5] py-20">
+            <div className="bg-[#F5F5F5] md:py-20 py-10">
                 <div className="w-[90%] lg:w-[80%] mx-auto flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between ">
                     <div className="lg:w-[35%] rounded-[8px]">
                         <header className="bg-[#04359C] p-4 rounded-tl-[8px] rounded-tr-[8px]">

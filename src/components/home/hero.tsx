@@ -15,7 +15,7 @@ export const Hero = () => {
                     <div className="flex flex-1 items-center">
                         <div className="w-[90%] lg:w-[80%] mx-auto">
                             <div className="md:max-w-[80%] ">
-                                <h1 className="text-white md:text-[68px] lg:text-[88px] text-[40px] text-3xl font-bold font-raleway">
+                                <h1 className="text-white md:text-[56px] xl:text-[88px] text-[30px] font-bold font-raleway">
                                     Revolutionizing the Engineering Services Industry
                                 </h1>
                                 <p className="text-white md:mt-2 mt-6 font-raleway md:text-[1.5rem]">

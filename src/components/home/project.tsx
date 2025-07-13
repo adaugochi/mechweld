@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { ProjectList } from "../project-list"
 
 export const Projects = () => {
     return (
@@ -14,13 +15,25 @@ export const Projects = () => {
                             Learn more about the work we do and how it is such a great delight to clients and communities.
                         </h2>
                     </div>
+                    <div className="hidden md:block">
+                        <Link
+                            href="/projects"
+                            className="bg-transparent my-4 md:my-0 border border-[#04359C] justify-center items-center gap-2 py-4 px-6 flex rounded-[64px] text-sm font-bold font-montserrat text-[#04359C]"
+                        >
+                            View All Projects <ArrowRight size={24} />
+                        </Link>
+                    </div>
+                </div>
+                <ProjectList />
+                <div className="md:hidden">
                     <Link
-                        href=""
+                        href="/projects"
                         className="bg-transparent my-4 md:my-0 border border-[#04359C] justify-center items-center gap-2 py-4 px-6 flex rounded-[64px] text-sm font-bold font-montserrat text-[#04359C]"
                     >
                         View All Projects <ArrowRight size={24} />
                     </Link>
                 </div>
+
             </div>
         </>
     )
