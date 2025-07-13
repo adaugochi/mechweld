@@ -26,7 +26,7 @@ export const Pagination = ({ currentPage, totalPages, onPageChange }: Pagination
                 disabled={currentPage === totalPages}
                 className="rounded-[100px] flex items-center gap-2 font-bold py-4 px-6 bg-[#04359C] font-montserrat text-white cursor-pointer text-sm disabled:opacity-50"
             >
-                Next Page<ArrowRight/>
+                Next Page <ArrowRight/>
             </button>
         </div>
     );
