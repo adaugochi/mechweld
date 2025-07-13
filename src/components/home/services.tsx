@@ -106,7 +106,7 @@ export const Services = () => {
                                     <p className="text-[#1A1A1A] mt-6  font-montserrat font-semibold text-[20px]">
                                         {service.category}
                                     </p>
-                                    <Link href={``}>
+                                    <Link href={`/services`}>
                                         <p className="text-[#04359C] font-montserrat text-[18px] flex gap-2 items-center">
                                             Learn More <ChevronRight size={24} />
                                         </p>

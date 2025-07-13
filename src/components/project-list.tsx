@@ -24,7 +24,7 @@ const projectList = [
 export const ProjectList = () => {
     return (
         <div className="md:pt-20 pt-10">
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
                 {projectList.map((project, index) => (
                     <Link href={`/projects/details`} className="relative w-full" key={index}>
                         <Image src={project.image} alt="img" width={421} height={587} className="h-[500px]" />

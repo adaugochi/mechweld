@@ -7,9 +7,11 @@ import CoatOfArm from "../../../public/assets/images/png/coatofarm.png";
 import NB from "../../../public/assets/images/png/nb-logo.png";
 import Nipco from "../../../public/assets/images/png/nipco-logo.png";
 import AquaRapha from "../../../public/assets/images/png/aqua-rapha-logo.png";
+import HydroTech from "../../../public/assets/images/png/hydrotech-logo.png";
+import SunchiFarm from "../../../public/assets/images/png/sunchifarm-logo.png"
 import Image from "next/image";
 
-const clientLogos = [Cocacola, CoatOfArm, NB, Nipco, AquaRapha];
+const clientLogos = [Cocacola, CoatOfArm, NB, Nipco, AquaRapha, HydroTech, SunchiFarm];
 
 export const OurClient = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -20,7 +22,7 @@ export const OurClient = () => {
         xPercent: -50,
         repeat: -1,
         ease: "linear",
-        duration: 20,
+        duration: 60,
       });
     }, scrollRef);
 

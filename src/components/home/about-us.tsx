@@ -2,6 +2,7 @@ import Image from "next/image"
 import Stroke from "../../../public/assets/images/png/about-stroke.png"
 import { Button } from "../ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link";
 import EngineerMan from "../../../public/assets/images/png/home-about-img.png"
 
 export const AboutUs = () => {
@@ -22,12 +23,14 @@ export const AboutUs = () => {
                         Our Organisational structures is built on the concept of global business and is  design to allow us compete most efficiently in the ever changing technological  world
                     </p>
                     <p className="text-[#1A1A1A] font-montserrat mb-6">
-                        Since our inception Mech Weld Ltd has supervised, installed and maintained for  numerous clients in Nigeria.
+                        Since our inception Mech-Weld Ltd has supervised, installed and maintained for  numerous clients in Nigeria.
                     </p>
-                    <Button className="py-4 btn-padding border border-[#04359C] text-[#04359C] bg-transparent rounded-[64px] font-bold font-montserrat">
-                        Read More
-                        <ArrowRight />
-                    </Button>
+                    <Link href={`/about`}>
+                        <Button className="py-4 btn-padding border border-[#04359C] text-[#04359C] bg-transparent rounded-[64px] font-bold font-montserrat">
+                            Read More
+                            <ArrowRight />
+                        </Button>
+                    </Link>
                 </div>
                 <div className="z-0 md:w-[50%] w-full mt-6">
                     <Image src={EngineerMan} alt="EngineerMan" className="w-full"/>

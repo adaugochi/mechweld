@@ -121,7 +121,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                                 <Link
                                     key={name}
                                     href={href}
-                                    className={`transition-all text-sm font-bold duration-100 hover:scale-95 ${pathname === href ? "text-[#04359C]" : ""
+                                    className={`transition-all text-sm font-bold duration-100 hover:scale-95 ${pathname === href ? "text-[#fdd028]" : ""
                                         }`}
                                 >
                                     {name}
