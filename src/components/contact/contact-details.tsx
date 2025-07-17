@@ -1,6 +1,10 @@
 'use client'
 
-import { MapPin, ArrowRight } from "lucide-react"
+import {
+    MapPin,
+    ArrowRight,
+    Loader
+} from "lucide-react"
 import { Mail } from "lucide-react"
 import { PhoneCall } from "lucide-react"
 import Link from "next/link";
@@ -9,9 +13,10 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { Textarea } from "../textarea";
 import { Input } from "../input";
+import axios from 'axios';
 
 type ContactFormData = {
-    firstName: string;
+    name: string;
     message: string;
     email: string;
 };
@@ -21,11 +26,18 @@ export const ContactDetails = () => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        reset,
+        formState: { errors, isSubmitting },
     } = useForm<ContactFormData>();
 
-    const onSubmit = (data: ContactFormData) => {
-        console.log(data);
+    const onSubmit = async (data: ContactFormData) => {
+        try {
+            await axios.post('/api/contact', data);
+            alert('Message sent!');
+            reset()
+        } catch (error) {
+            alert('Failed to send.');
+        }
     };
 
 
@@ -44,7 +56,7 @@ export const ContactDetails = () => {
                                 </h1>
                                 <div className="flex items-start gap-2 py-4 max-w-[80%]">
                                     <MapPin className="text-[#04359C] w-[20%]" />
-                                    <p className="text-[#808080] font-montserrat">1, Mech Weld Lane, opposite NB Plc-Ama By Eke Road, 9th mile corner, Enugu.</p>
+                                    <p className="text-[#808080] font-montserrat">1, Mech-Weld Lane, opposite NB Plc-Ama By Eke Road, 9th mile corner, Enugu.</p>
                                 </div>
                             </div>
                             <div>
@@ -59,7 +71,7 @@ export const ContactDetails = () => {
                                     <PhoneCall size={16} className="text-[#04359C]" />
                                     <div className="text-[#808080] font-montserrat">
                                         <p>08034101240, 08038807313,</p>
-                                        <p>08038743676,08038606044</p>
+                                        <p>08038743676, 08038606044</p>
                                     </div>
                                 </div>
                             </div>
@@ -81,18 +93,18 @@ export const ContactDetails = () => {
                     <div className="lg:w-[55%] bg-white p-6 rounded-[8px]">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <Input
-                                label="First name"
-                                name="firstName"
+                                label="Full name"
+                                name="name"
                                 type="text"
                                 placeholder="Enter your full name"
-                                register={register("firstName", {
-                                    required: "First name is required",
+                                register={register("name", {
+                                    required: "Full name is required",
                                     pattern: {
                                         value: /^[a-zA-Z\s]{2,30}$/,
                                         message: "Enter a valid name (letters only, 2-30 characters)"
                                     }
                                 })}
-                                error={errors.firstName}
+                                error={errors.name}
                             />
                             <Input
                                 label="Email Address"
@@ -124,13 +136,13 @@ export const ContactDetails = () => {
 
                             <button
                                 type="submit"
-                                className="bg-[#04359C] mt-6 text-white px-4 py-3 font-bold rounded-[64px] font-montserrat flex gap-2 cursor-pointer"
+                                className={`bg-[#04359C] mt-6 text-white px-4 py-3 font-bold rounded-[64px] font-montserrat flex gap-2 cursor-pointer ${isSubmitting ? 'cursor-not-allowed' : 'cursor-pointer'}`}
+                                disabled={isSubmitting}
                             >
-                                Send Message
-                                <ArrowRight />
+                                {isSubmitting ? 'Loading...' : 'Send Message'}
+                                {!isSubmitting ? <ArrowRight/> : <Loader/>}
                             </button>
                         </form>
-
                     </div>
                 </div>
             </div>
