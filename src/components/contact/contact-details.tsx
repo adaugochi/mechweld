@@ -15,6 +15,7 @@ import { Textarea } from "../textarea";
 import { Input } from "../input";
 import axios from 'axios';
 import Script from "next/script";
+import Swal from 'sweetalert2';
 
 
 type ContactFormData = {
@@ -37,15 +38,27 @@ export const ContactDetails = () => {
         data.grecaptcha = (window as any).grecaptcha?.getResponse();
 
         if (!data.grecaptcha) {
-            alert("Please complete the reCAPTCHA.");
+            Swal.fire({
+                icon: 'warning',
+                title: 'reCAPTCHA Required',
+                text: 'Please complete the reCAPTCHA before submitting.',
+            });
             return;
         }
         try {
             await axios.post('/api/contact', data);
-            alert('Message sent!');
+            Swal.fire({
+                icon: 'success',
+                title: 'Message Sent!',
+                text: 'We’ll get back to you shortly.',
+            });
             reset()
         } catch (error) {
-            alert('Failed to send.');
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Failed to send your message. Please try again later.',
+            });
         }
         (window as any).grecaptcha?.reset();
     };
