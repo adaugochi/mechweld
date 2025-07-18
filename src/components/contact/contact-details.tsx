@@ -14,11 +14,14 @@ import { useForm } from "react-hook-form";
 import { Textarea } from "../textarea";
 import { Input } from "../input";
 import axios from 'axios';
+import Script from "next/script";
+
 
 type ContactFormData = {
     name: string;
     message: string;
     email: string;
+    grecaptcha: string;
 };
 
 export const ContactDetails = () => {
@@ -31,6 +34,12 @@ export const ContactDetails = () => {
     } = useForm<ContactFormData>();
 
     const onSubmit = async (data: ContactFormData) => {
+        data.grecaptcha = (window as any).grecaptcha?.getResponse();
+
+        if (!data.grecaptcha) {
+            alert("Please complete the reCAPTCHA.");
+            return;
+        }
         try {
             await axios.post('/api/contact', data);
             alert('Message sent!');
@@ -38,6 +47,7 @@ export const ContactDetails = () => {
         } catch (error) {
             alert('Failed to send.');
         }
+        (window as any).grecaptcha?.reset();
     };
 
 
@@ -133,6 +143,8 @@ export const ContactDetails = () => {
                                 })}
                                 error={errors.message}
                             />
+                            <div className="g-recaptcha mt-4" data-sitekey="6Ld3AYgrAAAAADswz6-j9xOoD6L7X0gKfz5KZhLc"></div>
+
 
                             <button
                                 type="submit"
@@ -145,6 +157,10 @@ export const ContactDetails = () => {
                         </form>
                     </div>
                 </div>
+                <Script
+                  src="https://www.google.com/recaptcha/api.js"
+                  strategy="afterInteractive"
+                />
             </div>
         </>
     )
