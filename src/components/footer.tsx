@@ -40,7 +40,7 @@ export const Footer = () => {
                                     />
                                 </Link>
                                 <p className="text-white text-sm font-montserrat md:mt-35 mt-6">
-                                    ©2025 MechWeld. ALL RIGHTS RESERVED
+                                    © 2025 Mech-Weld. ALL RIGHTS RESERVED
                                 </p>
                             </div>
                             <div className="flex flex-col gap-4 text-white font-montserrat my-10 md:my-0">
@@ -66,7 +66,7 @@ export const Footer = () => {
                                     <PhoneCall />
                                     <div>
                                         <p className="text-white font-montserrat">08034101240, 08038807313,</p>
-                                        <p className="text-white font-montserrat">08038743676,08038606044</p>
+                                        <p className="text-white font-montserrat">08038743676, 08038606044</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start text-white gap-2">

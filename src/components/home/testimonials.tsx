@@ -53,45 +53,21 @@ export const Testimonials = () => {
 
     const testimonials = [
         {
-            quote:
-                "We would love to hear from you. To find out more about what we do, or to discuss how we can work together, please reach out to us.",
-            name: "John Doe",
-            position: "MD, NB West Africa",
+            quote: "I can confidently say Mech-Weld Engineering is one of our most reliable and professional service providers. Their exceptional workmanship, prompt delivery, and commitment to safety have consistently supported our packaging operations. We’ve enjoyed a seamless partnership over the years, and their team’s expertise continues to add great value.",
+            name: "Kunle Amao",
+            position: "Packaging Manager, Nigerian Breweries, Lagos",
             image: Profile,
         },
         {
-            quote:
-                "We would love to hear from you. To find out more about what we do, or to discuss how we can work together, please reach out to us.",
-            name: "John Doe",
-            position: "MD, NB West Africa",
+            quote: "I’m consistently impressed by MechWeld's professionalism and technical expertise. Their attention to detail, quality of work, and responsiveness set them apart in the engineering space. It’s clear they take pride in delivering lasting solutions, and they’ve earned my full trust and respect.",
+            name: "Kola Abatan",
+            position: "Engineering manager , Nigerian Breweries, Ibadan",
             image: Profile,
         },
         {
-            quote:
-                "We would love to hear from you. To find out more about what we do, or to discuss how we can work together, please reach out to us.",
-            name: "John Doe",
-            position: "MD, NB West Africa",
-            image: Profile,
-        },
-        {
-            quote:
-                "We would love to hear from you. To find out more about what we do, or to discuss how we can work together, please reach out to us.",
-            name: "John Doe",
-            position: "MD, NB West Africa",
-            image: Profile,
-        },
-        {
-            quote:
-                "We would love to hear from you. To find out more about what we do, or to discuss how we can work together, please reach out to us.",
-            name: "John Doe",
-            position: "MD, NB West Africa",
-            image: Profile,
-        },
-        {
-            quote:
-                "We would love to hear from you. To find out more about what we do, or to discuss how we can work together, please reach out to us.",
-            name: "John Doe",
-            position: "MD, NB West Africa",
+            quote: "Working with Mech Weld Engineering has been a standout experience. Their team brings a rare combination of skill, reliability, and integrity to every project. You can tell they are deeply committed to doing the job right the first time. In my experience, few companies match their level of dedication and technical know-how.",
+            name: "Chinedu Uwajeh",
+            position: "Engineering manager , Nigerian Breweries, Ama",
             image: Profile,
         },
     ];
@@ -128,15 +104,12 @@ export const Testimonials = () => {
                                     <div className="h-full flex flex-col justify-between mx-4 border-2 border-[#FDD028] bg-[#FFFFFF] p-6 rounded-2xl">
                                         <Image src={QuoteIcon} alt="quote" />
                                         <div className="flex-grow">
-                                            <p className="text-[#1A1A1A] font-montserrat text-sm">
-                                                {item.quote}
-                                            </p>
                                             <p className="text-[#1A1A1A] font-montserrat text-sm mt-2">
                                                 {item.quote}
                                             </p>
                                         </div>
                                         <div className="flex items-center gap-2 mt-10">
-                                            <Image src={item.image} alt="profile" />
+                                            {/*<Image src={item.image} alt="profile" />*/}
                                             <div>
                                                 <h4 className="text-[#1A1A1A] font-bold text-[18px] font-montserrat">
                                                     {item.name}
