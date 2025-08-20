@@ -18,11 +18,19 @@ export const OurClient = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+      const track = document.querySelector(".logo-track") as HTMLElement | null;
+      if (!track) return; // exit if not found
+
+      const trackWidth = track.scrollWidth;
+
       gsap.to(".logo-track", {
-        xPercent: -50,
+        x: -trackWidth,
         repeat: -1,
         ease: "linear",
-        duration: 60,
+        duration: 40, // adjust for speed
+        modifiers: {
+          x: gsap.utils.unitize(x => parseFloat(x) % trackWidth) // seamless loop
+        }
       });
     }, scrollRef);
 

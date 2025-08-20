@@ -47,7 +47,7 @@ export const Revenue = () => {
                                 </div>
                             </div>
                             <div className="text-center sm:text-left">
-                                <h4 className="text-[#04359C] text-left md:text-center font-semibold text-2xl font-raleway mb-2">
+                                <h4 className="text-[#04359C] text-left md:text-center font-semibold text-2xl font-raleway md:mb-2">
                                     {revenue.quantity}
                                 </h4>
                                 <p className="text-[#1A1A1A] md:text-sm font-montserrat max-w-[140px] sm:max-w-none break-words text-left sm:text-left md:text-center">
