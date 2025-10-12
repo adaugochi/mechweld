@@ -84,7 +84,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
         { name: "HOME", href: "/" },
         { name: "ABOUT US", href: "/about" },
         { name: "SERVICES", href: "/services" },
-        { name: "MEDIA", href: "/media" },
+        // { name: "MEDIA", href: "/media" },
         { name: "PROJECTS", href: "/projects" },
     ];
 

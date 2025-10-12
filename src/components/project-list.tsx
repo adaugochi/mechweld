@@ -26,13 +26,15 @@ export const ProjectList = () => {
         <div className="md:pt-20 pt-10">
             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
                 {projectList.map((project, index) => (
-                    <Link href={`/projects/details`} className="relative w-full" key={index}>
+                  <div className="relative w-full" key={index}>
+                     {/*<Link href={`/projects/details`} className="relative w-full" key={index}>*/}
                         <Image src={project.image} alt="img" width={421} height={587} className="h-[500px]" />
                         <div className="text-2xl text-[#FFFFFF] font-semibold absolute bottom-0 p-4 max-w-[90%]">
                             {project.label}
-                            <ArrowRight className="mt-4" />
+                             {/*<ArrowRight className="mt-4" />*/}
                         </div>
-                    </Link>
+                     {/*</Link>*/}
+                  </div>
                 ))}
             </div>
         </div>
