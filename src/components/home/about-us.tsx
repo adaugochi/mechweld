@@ -16,15 +16,13 @@ export const AboutUs = () => {
                         <h1 className="text-[#04359C] font-semibold text-3xl font-raleway">ABOUT US</h1>
                         <p className="text-[#04359C] text-[18px] font-montserrat pb-6 mt-2">Learn about the company.</p>
                     </div>
-                    <p className="text-[#1A1A1A] font-montserrat mb-6">
-                       We are an Engineering contracting company based in Nigeria that have created  value from being actively involved in Engineering Contracts with high  performance production technology, project management and consultancy. 
+                    <p className="text-[#1A1A1A] font-montserrat mb-4">
+                       Mech-Weld Ltd is a Nigerian engineering contracting company committed to delivering value through active participation in engineering projects across the country. We leverage proven production technologies, sound project management practices, and expert consultancy services to provide reliable and efficient engineering solutions. 
                     </p>
-                    <p className="text-[#1A1A1A] font-montserrat mb-6">
-                        Our Organisational structures is built on the concept of global business and is  design to allow us compete most efficiently in the ever changing technological  world
+                    <p className="text-[#1A1A1A] font-montserrat mb-4">
+                        Our organisational structure is built on global best-practice standards and designed to enable us compete effectively in today’s fast-evolving technological environment. This approach allows us to adapt quickly, maintain high performance, and consistently meet client expectations.
                     </p>
-                    <p className="text-[#1A1A1A] font-montserrat mb-6">
-                        Since our inception Mech-Weld Ltd has supervised, installed and maintained for  numerous clients in Nigeria.
-                    </p>
+                    
                     <Link href={`/about`}>
                         <Button className="py-4 btn-padding border border-[#04359C] text-[#04359C] bg-transparent rounded-[64px] font-bold font-montserrat">
                             Read More

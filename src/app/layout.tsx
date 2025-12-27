@@ -26,15 +26,23 @@ export const metadata: Metadata = {
   description: "Revolutionizing the Engineering Services Industry with world-class welding, fabrication, and automation solutions.",
   keywords: [
     "Mech-Weld",
+    "Mech Weld",
+    "MechWeld",
     "Engineering Services",
     "Welding",
     "Fabrication",
     "Civil Works",
-    "Designs",
+    "Engineering Designs",
     "Installation",
+    "Industrial",
     "Metal Works",
+    "Oil and Gas",
+    "Brewery",
+    "Repair",
+    "Machine",
+    "Spare Parts",
   ],
-  authors: [{ name: "Mech-Weld Team", url: "https://mechweld-v2.vercel.app/" }],
+  authors: [{ name: "Mech-Weld Tech Team", url: "https://mech-weld.com" }],
   icons: {
     icon: "/logo1.png",
     shortcut: "/logo1.png",
@@ -43,7 +51,7 @@ export const metadata: Metadata = {
     title: "Mech-Weld | Engineering Excellence",
     description:
       "Discover how Mech-Weld is transforming engineering with advanced solutions.",
-    url: "https://mechweld-v2.vercel.app/",
+    url: "https://mech-weld.com",
     siteName: "Mech-Weld",
     images: [
       {

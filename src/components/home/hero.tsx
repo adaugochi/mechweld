@@ -19,8 +19,7 @@ export const Hero = () => {
                                     Revolutionizing the Engineering Services Industry
                                 </h1>
                                 <p className="text-white md:mt-2 mt-6 font-raleway md:text-[1.5rem]">
-                                    Mech-Weld Engineering is set to revolutionize and democratize access to top notch
-                                    engineering services across Nigeria and Africa at large.
+                                    We are you trusted partner in your goal to be ahead of your competition.
                                 </p>
                             </div>
                         </div>

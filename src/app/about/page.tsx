@@ -11,7 +11,7 @@ function AboutUsPage () {
             <Hero />
             <AboutUs />
             <Safety />
-            <OurHistory />
+            {/* <OurHistory /> */}
             <Partnership />
             <Footer />
         </>

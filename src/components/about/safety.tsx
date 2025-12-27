@@ -9,13 +9,10 @@ export const Safety = () => {
                     <div className="flex justify-between items-center gap-6 flex-col-reverse md:flex-row">
                         <Image src={SafetyImage} alt="safety" className="w-full" />
                         <div>
-                            <p className="text-[#04359C] font-montserrat">Big on safety</p>
-                            <h1 className="text-[#04359C] font-semibold font-raleway text-2xl mb-4">Our HSE Policy</h1>
+                            <p className="text-[#04359C] font-semibold font-raleway text-2xl mb-4 text-center">Big on safety</p>
+                            <h1 className="text-[#04359C]  font-semibold font-raleway">Our HSE Policy</h1>
                             <p className="text-#1A1A1A] font-montserrat mb-4">Our HSE policy is dedicated to the health and safety of people and the protection of the environment.</p>
-                            <p className="text-#1A1A1A] font-montserrat mb-4">We see every employee as an HSE professional who believes that a destination of 365 Perfect HSE Days is possible and works every day to make it a reality.</p>
-                            <strong className="text-[#1A1A1A] font-montserrat font-bold">
-                                It took a personal and empowering message that supported our company’s purpose: <span className="text-[#04359C]"> “enabling safety, improving people’s lives.”</span>
-                            </strong>
+                            <p className="text-#1A1A1A] font-montserrat mb-4">We train and see every employee as an HSE professional who believes that a destination of 365 Perfect HSE Days is possible and works every day to make it a reality.</p>
                         </div>
                     </div>
                 </div>

@@ -29,10 +29,10 @@ export const Values = () => {
                 <h1 className="text-white uppercase font-semibold font-raleway text-3xl">
                     Core Values
                 </h1>
-                <p className="text-white mt-4 font-montserrat">
+                {/* <p className="text-white mt-4 font-montserrat">
                     Our core values are the basis for establishing a common culture for the company
-                </p>
-                <div className="flex md:justify-between items-center flex-wrap mt-30 gap-10 justify-center md:flex-row flex-col">
+                </p> */}
+                <div className="flex md:justify-between items-center flex-wrap mt-10 gap-10 justify-center md:flex-row flex-col">
                     {values.map((value, index) => (
                         <div key={index}>
                             <div className="w-[116px] h-[116px] bg-white rounded-[120px] flex justify-center items-center">

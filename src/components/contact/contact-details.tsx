@@ -100,7 +100,7 @@ export const ContactDetails = () => {
                             </div>
                             <div className="md:max-w-[80%]">
                                 <Link
-                                    href="https://wa.me/2348109082097?text=Hello%20Mech-Weld%2C%20I%27m%20interested%20in%20your%20services"
+                                    href="https://wa.me/2348034101240?text=Hello%20Mech-Weld%2C%20I%27m%20interested%20in%20your%20services"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-[#04359C] font-montserrat font-bold flex gap-2 border border-[#04359C] rounded-[64px] py-2 px-4 items-center justify-center"
