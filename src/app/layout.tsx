@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     "MechWeld",
     "Engineering Services",
     "Welding",
+    "Welder",
     "Fabrication",
     "Civil Works",
     "Engineering Designs",
@@ -44,18 +45,17 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Mech-Weld Tech Team", url: "https://mech-weld.com" }],
   icons: {
-    icon: "/logo1.png",
-    shortcut: "/logo1.png",
+    icon: "https://mech-weld.com/logo1.png",
+    shortcut: "https://mech-weld.com/logo1.png",
   },
   openGraph: {
     title: "Mech-Weld | Engineering Excellence",
-    description:
-      "Discover how Mech-Weld is transforming engineering with advanced solutions.",
+    description: "Discover how Mech-Weld is transforming engineering with advanced solutions.",
     url: "https://mech-weld.com",
     siteName: "Mech-Weld",
     images: [
       {
-        url: "/about-hero.png",
+        url: "https://mech-weld.com/about-hero.png",
         width: 1200,
         height: 630,
         alt: "Mech-Weld site preview",
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mech-Weld",
+    title: "Mech-Weld | Engineering Excellence",
     description: "Revolutionizing the Engineering Services Industry.",
-    images: ["/about-hero.png"],
+    images: ["https://mech-weld.com/about-hero.png"],
   },
   robots: {
     index: true,
