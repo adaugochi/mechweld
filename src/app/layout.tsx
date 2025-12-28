@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Mech-Weld Tech Team", url: "https://mech-weld.com" }],
   icons: {
-    icon: "https://mech-weld.com/logo1.png",
-    shortcut: "https://mech-weld.com/logo1.png",
+    icon: "https://mech-weld.com/favicon.ico",
+    shortcut: "https://mech-weld.com/favicon.ico",
   },
   openGraph: {
     title: "Mech-Weld | Engineering Excellence",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     siteName: "Mech-Weld",
     images: [
       {
-        url: "https://mech-weld.com/about-hero.png",
+        url: "https://mech-weld.com/logo.png",
         width: 1200,
         height: 630,
         alt: "Mech-Weld site preview",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mech-Weld | Engineering Excellence",
     description: "Revolutionizing the Engineering Services Industry.",
-    images: ["https://mech-weld.com/about-hero.png"],
+    images: ["https://mech-weld.com/logo.png"],
   },
   robots: {
     index: true,
