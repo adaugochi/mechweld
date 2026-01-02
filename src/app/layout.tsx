@@ -20,6 +20,7 @@ export const viewport: Viewport = {
   themeColor: "#000000",
   initialScale: 1,
 };
+export const revalidate = 0;
 
 export const metadata: Metadata = {
   title: "Mech-Weld | Engineering Services",
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "Mech-Weld",
     images: [
       {
-        url: "https://mech-weld.com/logo.png",
+        url: "https://mech-weld.com/logo-seo.png",
         width: 1200,
         height: 630,
         alt: "Mech-Weld site preview",
@@ -67,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mech-Weld | Engineering Excellence",
     description: "Revolutionizing the Engineering Services Industry.",
-    images: ["https://mech-weld.com/logo.png"],
+    images: ["https://mech-weld.com/logo-seo.png"],
   },
   robots: {
     index: true,
