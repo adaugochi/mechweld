@@ -156,7 +156,7 @@ export const ContactDetails = () => {
                                 })}
                                 error={errors.message}
                             />
-                            <div className="g-recaptcha mt-4" data-sitekey="6Ld3AYgrAAAAADswz6-j9xOoD6L7X0gKfz5KZhLc"></div>
+                            <div className="g-recaptcha mt-4" data-sitekey="6LfQtpcsAAAAAKlQa4QVzX2gPAVn-KWcH5ooCm8C"></div>
 
 
                             <button
