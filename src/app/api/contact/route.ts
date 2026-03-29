@@ -12,6 +12,7 @@ const EMAIL_PATTERN = /^[\w-.]+@([\w-]+\.)+[\w-]{2,}$/;
 const NAME_PATTERN = /^[a-zA-Z\s]{2,50}$/;
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
 const RATE_LIMIT_MAX = 5;
+const UPSTREAM_TIMEOUT_MS = 30000;
 
 const ipHits = new Map<string, number[]>();
 
@@ -70,7 +71,6 @@ function parsePayload(input: unknown): ContactPayload | null {
 
 async function verifyRecaptcha(token: string, remoteIp: string): Promise<boolean> {
   const secret = process.env.RECAPTCHA_SECRET_KEY;
-  console.log(secret)
   if (!secret) {
     console.error('Missing RECAPTCHA_SECRET_KEY environment variable');
     return false;
@@ -123,7 +123,7 @@ export async function POST(req: NextRequest) {
     }
 
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 10000);
+    const timeoutId = setTimeout(() => controller.abort(), UPSTREAM_TIMEOUT_MS);
 
     let scriptResponse: Response;
     try {
@@ -146,7 +146,18 @@ export async function POST(req: NextRequest) {
     } catch (error) {
       clearTimeout(timeoutId);
       console.error('Contact upstream request failed:', error);
-      return NextResponse.json({ success: false, message: 'Contact service unavailable' }, { status: 502 });
+      const err = error as Error & { cause?: unknown };
+      const isTimeout = err?.name === 'AbortError';
+      const diagnostic = isTimeout ? 'APPSCRIPT_TIMEOUT' : 'APPSCRIPT_NETWORK_ERROR';
+      return NextResponse.json(
+        {
+          success: false,
+          message: 'Contact service unavailable',
+          diagnostic,
+          detail: process.env.NODE_ENV !== 'production' ? String(err?.message || err) : undefined,
+        },
+        { status: 502 },
+      );
     }
 
     clearTimeout(timeoutId);
