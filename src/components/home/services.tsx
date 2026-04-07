@@ -101,7 +101,7 @@ export const Services = () => {
                                         alt={service.category}
                                         width={421}
                                         height={416}
-                                        className="w-full h-[416px] rounded-2xl"
+                                        className="h-auto w-full rounded-2xl"
                                     />
                                     <p className="text-[#1A1A1A] mt-6  font-montserrat font-semibold text-[20px]">
                                         {service.category}

@@ -36,7 +36,7 @@ export const Footer = () => {
                                         height={32}
                                         width={155}
                                         alt="mech-weld"
-                                        className="transition-all duration-300 hover:scale-105"
+                                        className="h-auto w-auto transition-all duration-300 hover:scale-105"
                                     />
                                 </Link>
                                 <p className="text-white text-sm font-montserrat md:mt-35 mt-6">

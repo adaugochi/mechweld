@@ -28,7 +28,7 @@ export const ProjectList = () => {
                 {projectList.map((project, index) => (
                   <div className="relative w-full" key={index}>
                      {/*<Link href={`/projects/details`} className="relative w-full" key={index}>*/}
-                        <Image src={project.image} alt="img" width={421} height={587} className="h-[500px]" />
+                        <Image src={project.image} alt="img" width={421} height={587} className="h-auto w-full" />
                         <div className="text-2xl text-[#FFFFFF] font-semibold absolute bottom-0 p-4 max-w-[90%]">
                             {project.label}
                              {/*<ArrowRight className="mt-4" />*/}
