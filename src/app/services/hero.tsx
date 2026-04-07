@@ -14,7 +14,7 @@ export const Hero = () => {
                     <div className="flex flex-1 items-end">
                         <div className="w-[90%] lg:w-[80%] mx-auto">
                             <div className="md:max-w-[80%] mb-40">
-                                <h1 className="text-white md:text-[68px] lg:text-[88px] text-[40px] text-3xl font-bold font-raleway md:leading-18">
+                                <h1 className="fade-up text-white md:text-[68px] lg:text-[88px] text-[40px] text-3xl font-bold font-raleway md:leading-18">
                                     Our Services
                                 </h1>
                             </div>

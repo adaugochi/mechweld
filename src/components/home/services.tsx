@@ -69,23 +69,23 @@ export const Services = () => {
 
 
     return (
-        <section className="py-20 bg-[#04359C0D] px-4 my-10 w-full">
+        <section className="py-20 px-4 my-12 w-full">
             <div className="w-[90%] mx-auto">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center flex-wrap gap-4">
                     <div className="">
-                        <div className="uppercase text-[#04359C] font-raleway mb-2 md:mb-0 font-semibold text-3xl">
+                        <div className="uppercase text-[#04359C] font-raleway mb-2 md:mb-0 font-semibold text-3xl tracking-wide fade-up">
                             Scope of Services
                         </div>
-                        <h2 className="text-[#04359C] text-[18px] font-montserrat mt-2">
+                        <h2 className="text-[#04359C] text-[18px] font-montserrat mt-2 fade-up-delay-1">
                             We take the best that exists and make it better.
                         </h2>
                     </div>
                     <div className="hidden md:block">
-                        <div className="text-[#04359C] flex gap-20">
-                            <button className="cursor-pointer" onClick={previous}>
+                        <div className="text-[#04359C] flex gap-5">
+                            <button className="cursor-pointer btn-lift p-2 rounded-full border border-[#04359C33]" onClick={previous}>
                                 <ArrowLeft size={40} />
                             </button>
-                            <button className="cursor-pointer" onClick={next}>
+                            <button className="cursor-pointer btn-lift p-2 rounded-full border border-[#04359C33]" onClick={next}>
                                 <ArrowRight size={40} />
                             </button>
                         </div>
@@ -95,19 +95,19 @@ export const Services = () => {
                     <Slider ref={sliderRef} {...settings} className="services-slider">
                         {services.map((service, index) => (
                             <div key={index} className="pr-4">
-                                <div className="pt-2 w-full rounded-sm">
+                                <div className="pt-2 w-full rounded-sm group">
                                     <Image
                                         src={service.image}
                                         alt={service.category}
                                         width={421}
                                         height={416}
-                                        className="h-auto w-full rounded-2xl"
+                                        className="h-auto w-full rounded-2xl shadow-lg transition duration-500 group-hover:-translate-y-1 group-hover:shadow-2xl"
                                     />
                                     <p className="text-[#1A1A1A] mt-6  font-montserrat font-semibold text-[20px]">
                                         {service.category}
                                     </p>
                                     <Link href={`/services`}>
-                                        <p className="text-[#04359C] font-montserrat text-[18px] flex gap-2 items-center">
+                                        <p className="text-[#04359C] font-montserrat text-[18px] flex gap-2 items-center group-hover:gap-3 transition-all">
                                             Learn More <ChevronRight size={24} />
                                         </p>
                                     </Link>

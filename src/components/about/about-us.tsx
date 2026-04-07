@@ -36,7 +36,7 @@ export const AboutUs = () => {
                     <h3 className="text-xl font-semibold text-[#04359C] mb-3">
                         Who We Are
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 leading-[1.8]">
                         Mech-Weld Ltd is a Nigeria-based engineering contracting company providing
                         high-performance engineering, project management, and consultancy services
                         across multiple sectors. We are known for delivering reliable engineering solutions across Nigeria through innovation, collaboration, and technical excellence.
@@ -49,7 +49,7 @@ export const AboutUs = () => {
                     <h3 className="text-xl font-semibold text-[#04359C] mb-3">
                         Our Structure
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 leading-[1.8]">
                         Our organisational structure is built on global best-practice standards,
                         enabling us to compete efficiently in a fast-changing technological
                         and business environment.
@@ -62,7 +62,7 @@ export const AboutUs = () => {
                     <h3 className="text-xl font-semibold text-[#04359C] mb-3">
                         Proven Experience
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 leading-[1.8]">
                         Since inception, we have successfully supervised, installed, and maintained
                         engineering systems for numerous clients across Nigeria.
                     </p>
@@ -74,7 +74,7 @@ export const AboutUs = () => {
                     <h3 className="text-xl font-semibold text-[#04359C] mb-3">
                         Value We Deliver
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 leading-[1.8]">
                         We deliver facilities and engineering solutions that lower operational costs,
                         reduce project risks, and improve productivity and long-term performance.
                     </p>
@@ -85,7 +85,7 @@ export const AboutUs = () => {
                     <h3 className="text-xl font-semibold text-[#04359C] mb-3">
                         Customer Focus
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 leading-[1.8]">
                         Collaboration is central to our operations. We work closely with clients to
                         understand project needs and deploy the right technologies, expertise,
                         and resources for successful delivery.
@@ -98,7 +98,7 @@ export const AboutUs = () => {
                     <h3 className="text-xl font-semibold text-[#04359C] mb-3">
                         Our Scope of Services
                     </h3>
-                    <ul className="text-gray-700 space-y-1 list-disc pl-5">
+                    <ul className="text-gray-700 leading-[1.8] space-y-1 list-disc pl-5">
                         <li>Plant Installation and Maintenance</li>
                         <li>Mechanical & Electrical Installation</li>
                         <li>Oil & Gas Engineering Services</li>
