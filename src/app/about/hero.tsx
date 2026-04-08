@@ -1,12 +1,20 @@
 import Navbar from "@/components/navbar";
+import Image from "next/image";
 
 export const Hero = () => {
     return (
         <>
             <div
-                className="relative h-[100vh] bg-cover bg-center"
-                style={{ backgroundImage: `url('/assets/images/png/about-hero.png')` }}
+                className="relative h-[100vh]"
             >
+                <Image
+                    src="/assets/images/png/about-hero.png"
+                    alt="About page hero background"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover"
+                />
                 <div className="absolute inset-0 bg-opacity-50 z-0 bg-black/40" />
 
                 <div className="relative z-10 h-[100vh] flex flex-col">

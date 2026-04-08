@@ -2,14 +2,22 @@ import Navbar from "../navbar";
 import { Revenue } from "./revenue";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export const Hero = () => {
     return (
         <>
             <div
-                className="relative min-h-[100vh] bg-cover bg-center overflow-hidden"
-                style={{ backgroundImage: `url('/assets/images/png/landing-hero.png')` }}
+                className="relative min-h-[100vh] overflow-hidden"
             >
+                <Image
+                    src="/assets/images/png/landing-hero.png"
+                    alt="Industrial engineering hero background"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover"
+                />
                 <div className="absolute inset-0 bg-[linear-gradient(105deg,rgba(1,17,58,0.82)_0%,rgba(4,53,156,0.66)_45%,rgba(4,53,156,0.34)_100%)] z-0" />
                 <div className="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-[#fdd028]/25 blur-3xl z-0" />
                 <div className="absolute -bottom-32 left-10 w-[380px] h-[380px] rounded-full bg-[#7ca8ff]/25 blur-3xl z-0" />

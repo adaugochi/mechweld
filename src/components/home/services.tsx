@@ -101,6 +101,7 @@ export const Services = () => {
                                         alt={service.category}
                                         width={421}
                                         height={416}
+                                        sizes="(max-width: 640px) 92vw, (max-width: 1024px) 48vw, 30vw"
                                         className="h-auto w-full rounded-2xl shadow-lg transition duration-500 group-hover:-translate-y-1 group-hover:shadow-2xl"
                                     />
                                     <p className="text-[#1A1A1A] mt-6  font-montserrat font-semibold text-[20px]">

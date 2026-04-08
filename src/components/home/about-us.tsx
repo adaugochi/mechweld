@@ -33,7 +33,12 @@ export const AboutUs = () => {
                 </div>
                 <div className="z-0 md:w-[50%] w-full mt-8 md:mt-0 relative fade-up-delay-2">
                     <div className="absolute -inset-4 rounded-[28px] bg-[linear-gradient(120deg,rgba(4,53,156,0.18),rgba(253,208,40,0.35))] blur-xl" />
-                    <Image src={EngineerMan} alt="EngineerMan" className="w-full rounded-[24px] relative z-10 shadow-2xl"/>
+                    <Image
+                        src={EngineerMan}
+                        alt="EngineerMan"
+                        sizes="(max-width: 768px) 92vw, 50vw"
+                        className="w-full rounded-[24px] relative z-10 shadow-2xl"
+                    />
                 </div>
             </div>
         </div>
