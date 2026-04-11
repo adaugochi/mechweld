@@ -122,6 +122,8 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                                 height={32}
                                 width={155}
                                 alt="mech-weld"
+                                loading="eager"
+                                fetchPriority="high"
                                 className="h-auto w-auto transition-all duration-300 hover:scale-105"
                             />
                         </Link>
