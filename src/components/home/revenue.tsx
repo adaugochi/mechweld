@@ -15,7 +15,7 @@ export const Revenue = () => {
         },
         {
             icon: SuitCase,
-            quantity: "10 yrs",
+            quantity: "10+",
             label: "areas of expertise",
         },
         {
@@ -30,7 +30,7 @@ export const Revenue = () => {
         },
         {
             icon: SparePart,
-            quantity: "1000+",
+            quantity: "10,000+",
             label: "spare parts supplied",
         },
     ]
