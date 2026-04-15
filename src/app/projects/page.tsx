@@ -2,17 +2,22 @@ import { Hero } from "./hero";
 import { Partnership } from "@/components/partnership";
 import { Footer } from "@/components/footer";
 import { ProjectList } from "@/components/project-list";
+import { Reveal } from "@/components/motion/reveal";
 
 function ProjectsPage() {
     return (
         <>
             <Hero />
-            <div className="md:pb-20 pb-10 bg-[#F5F5F5]">
-                <div className="w-[90%] mx-auto">
-                    <ProjectList />
+            <Reveal delay={40}>
+                <div className="md:pb-20 pb-10 bg-[#F5F5F5]">
+                    <div className="w-[90%] mx-auto">
+                        <ProjectList />
+                    </div>
                 </div>
-            </div>
-            <Partnership />
+            </Reveal>
+            <Reveal delay={150}>
+                <Partnership />
+            </Reveal>
             <Footer />
         </>
     )

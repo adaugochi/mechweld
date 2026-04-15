@@ -75,23 +75,23 @@ export const Testimonials = () => {
 
     return (
         <>
-            <div className="bg-[#1A1A1A]">
+            <div className="bg-[linear-gradient(160deg,#101010_0%,#1c2f57_54%,#0f172a_100%)]">
                 <div className="w-[90%] mx-auto py-30">
                     <div className="flex justify-between items-center">
                         <div className="">
-                            <div className="uppercase text-white font-raleway font-semibold mb-2 md:mb-0 text-3xl">
+                            <div className="uppercase text-white font-raleway font-semibold mb-2 md:mb-0 text-3xl tracking-wide fade-up">
                                 Testimonials
                             </div>
-                            <h2 className="text-white text-[18px] font-montserrat mt-2">
+                            <h2 className="text-[#d9e4ff] text-[18px] font-montserrat mt-2 fade-up-delay-1">
                                 Here are a few kind words clients have to say about working with Mech-Weld
                             </h2>
                         </div>
                         <div className="hidden md:block">
-                            <div className="text-white flex gap-20">
-                                <button className="cursor-pointer" onClick={previous}>
+                            <div className="text-white flex gap-5">
+                                <button className="cursor-pointer btn-lift p-2 rounded-full border border-white/30 bg-white/10" onClick={previous}>
                                     <ArrowLeft size={40} />
                                 </button>
-                                <button className="cursor-pointer" onClick={next}>
+                                <button className="cursor-pointer btn-lift p-2 rounded-full border border-white/30 bg-white/10" onClick={next}>
                                     <ArrowRight size={40} />
                                 </button>
                             </div>
@@ -101,10 +101,10 @@ export const Testimonials = () => {
                         <Slider ref={sliderRef} {...settings} className="testimonials-slider">
                             {testimonials.map((item, index) => (
                                 <div key={index} className="h-full min-h-[400px] md:min-h-[360px]">
-                                    <div className="h-full flex flex-col justify-between mx-4 border-2 border-[#FDD028] bg-[#FFFFFF] p-6 rounded-2xl">
+                                    <div className="h-full flex flex-col justify-between mx-4 border border-[#FDD028]/60 bg-[#FFFFFF] p-6 rounded-2xl shadow-[0_16px_30px_rgba(0,0,0,0.25)]">
                                         <Image src={QuoteIcon} alt="quote" />
                                         <div className="flex-grow">
-                                            <p className="text-[#1A1A1A] font-montserrat text-sm mt-2">
+                                            <p className="text-[#1A1A1A] font-montserrat text-sm mt-3 leading-7">
                                                 {item.quote}
                                             </p>
                                         </div>

@@ -24,6 +24,8 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
     };
 
     useEffect(() => {
+        if (!buttonRef.current) return;
+
         gsap.from(buttonRef.current, {
             scale: 0,
             opacity: 0,
@@ -34,32 +36,46 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
     }, []);
 
     useEffect(() => {
+        const menu = menuRef.current;
+        if (!menu) return;
+
+        const menuItems = menuItemsRef.current.filter(
+            (item): item is HTMLAnchorElement => Boolean(item)
+        );
+
         if (isOpen) {
             gsap.fromTo(
-                menuRef.current,
+                menu,
                 { x: "-100%", y: "-100%", opacity: 0 },
                 { x: "0%", y: "0%", opacity: 1, duration: 0.6, ease: "power3.out" }
             );
 
-            gsap.fromTo(
-                menuItemsRef.current,
-                { opacity: 0, x: -50 },
-                {
-                    opacity: 1,
-                    x: 0,
-                    stagger: 0.2,
-                    delay: 0.2,
-                    ease: "power3.out",
-                }
-            );
+            if (menuItems.length) {
+                gsap.fromTo(
+                    menuItems,
+                    { opacity: 0, x: -50 },
+                    {
+                        opacity: 1,
+                        x: 0,
+                        stagger: 0.2,
+                        delay: 0.2,
+                        ease: "power3.out",
+                    }
+                );
+            }
         } else {
-            gsap.to(menuItemsRef.current, {
+            if (!menuItems.length) {
+                gsap.set(menu, { x: "-100%", y: "-100%", opacity: 0 });
+                return;
+            }
+
+            gsap.to(menuItems, {
                 opacity: 0,
                 x: -50,
                 stagger: 0.2,
                 ease: "power3.in",
                 onComplete: () => {
-                    gsap.to(menuRef.current, {
+                    gsap.to(menu, {
                         x: "-100%",
                         y: "-100%",
                         opacity: 0,
@@ -90,11 +106,11 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
 
     return (
         <div
-            className={`border-b border-[#bdbbbb] fixed w-full top-0 z-[100] ${theme === "dark"
+            className={`border-b border-white/20 fixed w-full top-0 z-[100] transition-all duration-300 ${theme === "dark"
                 ? scrolled
-                    ? "bg-[#1A1A1A]"
+                    ? "bg-[#08193fcc] backdrop-blur-md shadow-lg"
                     : ""
-                : "bg-[#1A1A1A]"
+                : "bg-[#08193fcc] backdrop-blur-md"
                 }`}
         >
             <nav className="w-[90%] lg:w-[80%] mx-auto bg-transparent py-5 flex justify-between items-center lg:gap-40 relative">
@@ -106,7 +122,9 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                                 height={32}
                                 width={155}
                                 alt="mech-weld"
-                                className="transition-all duration-300 hover:scale-105"
+                                loading="eager"
+                                fetchPriority="high"
+                                className="h-auto w-auto transition-all duration-300 hover:scale-105"
                             />
                         </Link>
                     </div>
@@ -121,7 +139,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                                 <Link
                                     key={name}
                                     href={href}
-                                    className={`transition-all text-sm font-bold duration-100 hover:scale-95 ${pathname === href ? "text-[#fdd028]" : ""
+                                    className={`transition-all text-sm font-bold duration-100 hover:text-[#fdd028] ${pathname === href ? "text-[#fdd028]" : ""
                                         }`}
                                 >
                                     {name}
@@ -134,7 +152,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                     <div className="hidden md:block">
                         <Link
                             href="/contact"
-                            className="bg-[#04359C] justify-center items-center gap-2 py-4 px-6 flex rounded-[64px] text-sm font-bold font-montserrat text-white"
+                            className="btn-lift bg-[#fdd028] justify-center items-center gap-2 py-4 px-6 flex rounded-[64px] text-sm font-bold font-montserrat text-[#04359C]"
                         >
                             Contact Us <ArrowRight size={20} />
                         </Link>
@@ -143,7 +161,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
 
                 {/* Mobile Menu Button */}
                 <button
-                    
+                    ref={buttonRef}
                     className={`md:hidden cursor-pointer ${theme === "dark" ? "text-white" : "text-white"} hover:scale-105`}
                     onClick={handleMobileButton}
                 >
@@ -153,7 +171,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                 {/* Mobile Menu Overlay */}
                 <div
                     ref={menuRef}
-                    className="fixed top-0 left-0 w-full h-full bg-[#1A1A1A] flex flex-col items-start p-6 transform -translate-x-full -translate-y-full opacity-0 z-50"
+                    className="fixed top-0 left-0 w-full h-full bg-[linear-gradient(160deg,#051433_0%,#0d2b68_100%)] flex flex-col items-start p-6 transform -translate-x-full -translate-y-full opacity-0 z-50"
                 >
                     <div className="w-full">
                         <div className="w-full flex justify-between gap-10 mt-4">
@@ -163,7 +181,7 @@ const Navbar = ({ theme = "dark" }: NavProps) => {
                                     height={32}
                                     width={155}
                                     alt="mech-weld"
-                                    className="transition-all duration-300 hover:scale-105"
+                                    className="h-auto w-auto transition-all duration-300 hover:scale-105"
                                 />
                             </Link>
                             <button
